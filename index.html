@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPlatform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>EduPlatform</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#materials">Study Materials</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to EduPlatform</h2>
+            <p>Your go-to platform for all study materials including PYQs, notes, and more.</p>
+            <a href="#materials" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Study Materials Section -->
+    <section id="materials" class="materials">
+        <h2>Previous Year Question Papers</h2>
+        <div class="material-grid">
+            <!-- PYQ 1 -->
+            <div class="material-card">
+                <h3>Subject: Mathematics</h3>
+                <p>Year: 2022</p>
+                <button class="download-btn" onclick="downloadMaterial('mathematics-2022.pdf')">Download</button>
+            </div>
+
+            <!-- PYQ 2 -->
+            <div class="material-card">
+                <h3>Subject: Physics</h3>
+                <p>Year: 2021</p>
+                <button class="download-btn" onclick="downloadMaterial('physics-2021.pdf')">Download</button>
+            </div>
+
+            <!-- PYQ 3 -->
+            <div class="material-card">
+                <h3>Subject: Chemistry</h3>
+                <p>Year: 2020</p>
+                <button class="download-btn" onclick="downloadMaterial('chemistry-2020.pdf')">Download</button>
+            </div>
+
+            <!-- PYQ 4 -->
+            <div class="material-card">
+                <h3>Subject: Biology</h3>
+                <p>Year: 2021</p>
+                <button class="download-btn" onclick="downloadMaterial('biology-2021.pdf')">Download</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="#" class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 EduPlatform. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
